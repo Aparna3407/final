@@ -1,0 +1,24 @@
+
+{% block body %}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Name"><br>
+    <input type="text" name="desc" placeholder="Description"><br>
+    <input type="date" name="year" placeholder="Release date"><br>
+    <input type="file" name="img"><br>
+    <input type="text" name="director" placeholder="director"><br>
+    <input type="text" name="producer" placeholder="producer"><br>
+    <input type="text" name="cast" placeholder="cast"><br>
+
+    <input type="submit">
+
+</form>
+
+
+
+
+{% endblock %}
+
+
+
+
